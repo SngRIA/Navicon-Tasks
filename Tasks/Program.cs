@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Reflection;
-using Tasks.Attributes;
-using Tasks.Models;
-using Tasks.Enums;
-using Tasks.Serializers;
-using Tasks.Serializers.Models;
+using ContactSerializer.Attributes;
+using ContactSerializer.Enums;
+using ContactSerializer.Models;
+using ContactSerializer.Serializers.Models;
 
 namespace Tasks
 {
@@ -37,9 +36,9 @@ namespace Tasks
             Console.WriteLine(contactDeserialized);
             */
 
-            ContactSerializer.Serialize<Contact>(new[] { new ContactSerializeData(contact, "1.data") });
+            ContactSerializer.Serializers.ContactSerializer.Serialize<Contact>(new[] { new ContactSerializeData(contact, "1.data") });
 
-            foreach (var nContact in ContactSerializer.Deserialize<Contact>(new[] { "2.data" }))
+            foreach (var nContact in ContactSerializer.Serializers.ContactSerializer.Deserialize<Contact>(new[] { "2.data" }))
             {
                 Console.WriteLine(nContact);
             }

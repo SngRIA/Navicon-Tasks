@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ContactSerializer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fa69c37e4eec6206, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ContactSerializer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,15 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\AddressType.cs" />
-    <Compile Include="Enums\Gender.cs" />
     <Compile Include="Models\Address.cs" />
-    <Compile Include="Attributes\DateLimitAttribute.cs" />
-    <Compile Include="Attributes\RegExAttribute.cs" />
-    <Compile Include="Attributes\StringLengthLimitAttribute.cs" />
-    <Compile Include="Models\Contact.cs" />
-    <Compile Include="Attributes\DescriptionAttribute.cs" />
-    <Compile Include="Serializers\Models\ContactSerializeData.cs" />
-    <Compile Include="Serializers\ContactSerializer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

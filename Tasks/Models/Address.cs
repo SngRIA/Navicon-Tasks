@@ -1,6 +1,6 @@
 ﻿using System;
-using Tasks.Attributes;
 using Tasks.Enums;
+using ContactSerializer.Attributes;
 
 namespace Tasks.Models
 {
