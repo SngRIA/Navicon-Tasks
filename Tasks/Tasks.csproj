@@ -35,7 +35,7 @@
   <ItemGroup>
     <Reference Include="ContactSerializer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fa69c37e4eec6206, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\ContactSerializer.dll</HintPath>
+      <HintPath>..\..\ContactSerializer\ContactSerializer\bin\Debug\ContactSerializer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

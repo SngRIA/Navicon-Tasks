@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Reflection;
+using ContactSerializer;
 using ContactSerializer.Attributes;
 using ContactSerializer.Enums;
 using ContactSerializer.Models;
-using ContactSerializer.Serializers.Models;
 
 namespace Tasks
 {
@@ -18,7 +18,8 @@ namespace Tasks
                 middleName: "MiddleName",
                 gender: Gender.Male,
                 iTN: "123456789",
-                phoneNumber: "+79999999999");
+                phoneNumber: "+79999999999",
+                address: new Address("country", "city", "address", AddressType.Actual));
 
             Console.WriteLine($"ValidateDate - { ValidateDate(contact) }");
             Console.WriteLine($"ValidateFirstName - { ValidateFirstName(contact) }");
@@ -28,19 +29,14 @@ namespace Tasks
 
             Console.WriteLine(contact);
 
-            /*
-            var contactSerializer = new ContactSerializer("test.data");
-            contactSerializer.Serialize(contact);
-            var contactDeserialized = contactSerializer.Deserialize();
+            
+            var contactSerializer = new ContactSerializer.Serializers.ContactSerializer("test.data");
+            contactSerializer.Serialize(new[] { contact });
 
-            Console.WriteLine(contactDeserialized);
-            */
-
-            ContactSerializer.Serializers.ContactSerializer.Serialize<Contact>(new[] { new ContactSerializeData(contact, "1.data") });
-
-            foreach (var nContact in ContactSerializer.Serializers.ContactSerializer.Deserialize<Contact>(new[] { "2.data" }))
+            var contacts = contactSerializer.Deserialize();
+            foreach (var contactDeserialized in contacts)
             {
-                Console.WriteLine(nContact);
+                Console.WriteLine(contactDeserialized);
             }
 
             Console.ReadKey();
