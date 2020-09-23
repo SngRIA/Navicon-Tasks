@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks", "Tasks\Tasks.csproj", "{332192B5-EED6-465B-99AE-04C0CFC44A21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTestSerializer", "Tasks\TaskTestSerializer.csproj", "{332192B5-EED6-465B-99AE-04C0CFC44A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskExcelExport", "SecondTask\TaskExcelExport.csproj", "{E0AFDF93-281B-4503-BC1B-63CCF041482E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskExcelCreate10Objects", "ThirdTask\TaskExcelCreate10Objects.csproj", "{7D2A6FD5-14A3-4D42-99D0-F1403DC593E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskLibrary", "TaskLibrary\TaskLibrary.csproj", "{B8C33F17-B83C-4FC3-943C-B5F0DC5D8EA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskCSVExport", "TaskCSVExport\TaskCSVExport.csproj", "{8CB6CCEB-F5D6-4DD6-9E45-808B1A239652}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskExportLibrary", "TaskExportLibrary\TaskExportLibrary.csproj", "{06A2A210-DC04-447F-8C12-17E62B171AB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{332192B5-EED6-465B-99AE-04C0CFC44A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{332192B5-EED6-465B-99AE-04C0CFC44A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{332192B5-EED6-465B-99AE-04C0CFC44A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0AFDF93-281B-4503-BC1B-63CCF041482E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0AFDF93-281B-4503-BC1B-63CCF041482E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0AFDF93-281B-4503-BC1B-63CCF041482E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0AFDF93-281B-4503-BC1B-63CCF041482E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D2A6FD5-14A3-4D42-99D0-F1403DC593E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2A6FD5-14A3-4D42-99D0-F1403DC593E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2A6FD5-14A3-4D42-99D0-F1403DC593E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2A6FD5-14A3-4D42-99D0-F1403DC593E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C33F17-B83C-4FC3-943C-B5F0DC5D8EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C33F17-B83C-4FC3-943C-B5F0DC5D8EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C33F17-B83C-4FC3-943C-B5F0DC5D8EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C33F17-B83C-4FC3-943C-B5F0DC5D8EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB6CCEB-F5D6-4DD6-9E45-808B1A239652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB6CCEB-F5D6-4DD6-9E45-808B1A239652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB6CCEB-F5D6-4DD6-9E45-808B1A239652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB6CCEB-F5D6-4DD6-9E45-808B1A239652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A2A210-DC04-447F-8C12-17E62B171AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A2A210-DC04-447F-8C12-17E62B171AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A2A210-DC04-447F-8C12-17E62B171AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A2A210-DC04-447F-8C12-17E62B171AB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
